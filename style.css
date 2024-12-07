@@ -6,6 +6,7 @@
   --text-color-black: black;
   --text-color-white: white;
   --text-color-grey: #333;
+  --border-and-box-shadow-color-black: rgba(0, 0, 0, 0.1);
 }
 
 body,
@@ -60,7 +61,7 @@ header {
 .profile-card {
   margin: 18px;
   color: var(--text-color-white);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px var(--border-and-box-shadow-color-black);
 }
 
 .profile-card img,
@@ -107,7 +108,8 @@ main {
 
 .project {
   margin: 14px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px var(--border-and-box-shadow-color-black);
+  border: 1px solid var(--border-and-box-shadow-color-black);
 }
 
 .project-info {
