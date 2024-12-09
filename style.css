@@ -55,24 +55,24 @@ svg path {
   fill: black;
 }
 
-header {
+.profile-card {
+  padding: 18px;
+  color: var(--text-color-white);
   background: linear-gradient(
-    160deg,
+    155deg,
     var(--background-color-blue) 50%,
     var(--text-color-white) 50%
   );
-}
-
-.profile-card {
-  margin: 18px;
-  color: var(--text-color-white);
-  box-shadow: 4px 4px 4px var(--border-and-box-shadow-color-black);
 }
 
 .profile-card img,
 .project img,
 footer img {
   margin: 0 auto;
+}
+
+.profile-card img {
+  box-shadow: 4px 4px 4px var(--border-and-box-shadow-color-black);
 }
 
 .profile-card h1 {
