@@ -48,6 +48,7 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 svg path {
@@ -71,9 +72,7 @@ header {
 .profile-card img,
 .project img,
 footer img {
-  display: block;
   margin: 0 auto;
-  max-width: 100%;
 }
 
 .profile-card h1 {
@@ -142,7 +141,7 @@ main {
 .project-info-top {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   justify-content: space-between;
   padding: 20px 20px 20px 30px;
 }
@@ -170,6 +169,11 @@ footer {
   gap: 14px;
   padding: 14px;
   margin-bottom: 28px;
+}
+
+.contact-me > p {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 address {
