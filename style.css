@@ -50,6 +50,10 @@ a {
   cursor: pointer;
 }
 
+svg path {
+  fill: black;
+}
+
 header {
   background: linear-gradient(
     160deg,
@@ -93,9 +97,28 @@ main h2,
 }
 
 .social-links {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links svg {
+  height: 36px;
+  width: 36px;
+}
+
+.youtube {
+  transform: scale(1.2);
+}
+
+.youtube path {
+  fill: red;
+}
+
+.wikipedia {
+  transform: scale(1.1);
 }
 
 main {
@@ -128,6 +151,12 @@ main {
   font-size: 1.4rem;
 }
 
+.project-links svg,
+.address-bottom svg {
+  height: 24px;
+  width: 24px;
+}
+
 .project-info p {
   padding: 0 30px 0 20px;
 }
@@ -146,4 +175,20 @@ footer {
 address {
   font-style: normal;
   gap: 14px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.address-bottom svg {
+  display: none;
+}
+
+.address-bottom svg path {
+  fill: currentColor;
 }
