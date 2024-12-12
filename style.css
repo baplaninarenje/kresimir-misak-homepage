@@ -203,6 +203,7 @@ address {
 
 /* tablet */
 @media (min-width: 500px) {
+  /* header */
   header {
     padding: 30px;
     background: var(--header-or-profile-card-background);
@@ -251,4 +252,45 @@ address {
   .social-links {
     display: none;
   }
+  /* header */
+
+  /* main */
+  main {
+    padding-bottom: 22vw;
+  }
+
+  main > h2 {
+    align-self: flex-start;
+    padding-bottom: 1vw;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5vw 3vw;
+  }
+
+  main > h2,
+  .projects {
+    margin: 0 5vw;
+  }
+
+  .project {
+    margin: 0;
+  }
+
+  .project-info {
+    padding-bottom: 20px;
+  }
+
+  .project-info-top {
+    padding: 20px;
+    gap: 5px;
+  }
+
+  .project-info-top h3 {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+  }
+  /* main */
 }
