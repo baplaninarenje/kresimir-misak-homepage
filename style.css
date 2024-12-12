@@ -4,9 +4,19 @@
 :root {
   --background-color-blue: #007a99;
   --text-color-black: black;
-  --text-color-white: white;
+  --text-and-background-color-white: white;
   --text-color-grey: #333;
   --border-and-box-shadow-color-black: rgba(0, 0, 0, 0.1);
+  --profile-card-and-project-box-shadow: 5px 5px 5px
+      var(--border-and-box-shadow-color-black),
+    -3px 0px 3px var(--border-and-box-shadow-color-black);
+  --about-me-and-project-border: 1px solid
+    var(--border-and-box-shadow-color-black);
+  --header-or-profile-card-background: linear-gradient(
+    155deg,
+    var(--background-color-blue) 50%,
+    var(--text-and-background-color-white) 50%
+  );
 }
 
 body,
@@ -36,7 +46,7 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2 {
@@ -57,12 +67,8 @@ svg path {
 
 .profile-card {
   padding: 18px;
-  color: var(--text-color-white);
-  background: linear-gradient(
-    155deg,
-    var(--background-color-blue) 50%,
-    var(--text-color-white) 50%
-  );
+  color: var(--text-and-background-color-white);
+  background: var(--header-or-profile-card-background);
 }
 
 .profile-card img,
@@ -72,20 +78,18 @@ footer img {
 }
 
 .profile-card img {
-  box-shadow: 4px 4px 4px var(--border-and-box-shadow-color-black);
+  box-shadow: var(--profile-card-and-project-box-shadow);
 }
 
 .profile-card h1 {
-  max-height: 148px;
-  max-width: 335px;
+  max-width: 190px;
   font-size: 3.1rem;
   padding-left: 5px;
   transform: translateY(-100%);
-  margin-bottom: -148px;
 }
 
 .about-me {
-  margin: 14px;
+  margin: -150px 14px 14px 14px;
   gap: 10px;
 }
 
@@ -130,8 +134,8 @@ main {
 
 .project {
   margin: 14px;
-  box-shadow: 4px 4px 4px var(--border-and-box-shadow-color-black);
-  border: 1px solid var(--border-and-box-shadow-color-black);
+  box-shadow: var(--profile-card-and-project-box-shadow);
+  border: var(--about-me-and-project-border);
 }
 
 .project-info {
@@ -165,7 +169,7 @@ footer {
 }
 
 .contact-me {
-  color: var(--text-color-white);
+  color: var(--text-and-background-color-white);
   gap: 14px;
   padding: 14px;
   margin-bottom: 28px;
@@ -195,4 +199,56 @@ address {
 
 .address-bottom svg path {
   fill: currentColor;
+}
+
+/* tablet */
+@media (min-width: 500px) {
+  header {
+    padding: 30px;
+    background: var(--header-or-profile-card-background);
+  }
+
+  .profile-card {
+    z-index: 99;
+    flex-direction: row;
+    padding: 0;
+    background: none;
+  }
+
+  .profile-card picture {
+    width: 44vw;
+  }
+
+  .profile-card h1 {
+    max-height: none;
+    max-width: none;
+    transform: none;
+    padding-left: 0;
+    margin: 15px 0 0 -50px;
+    font-size: clamp(2.4rem, 6vw, 3.1rem);
+    white-space: nowrap;
+  }
+
+  .about-me {
+    border: var(--about-me-and-project-border);
+    box-shadow: var(--profile-card-and-project-box-shadow);
+    padding: 70px 20px 50px 20px;
+    margin: calc(-16vw - 58px - 10px - 2px) 8vw 0 8vw;
+    background-color: var(--text-and-background-color-white);
+  }
+
+  .about-me h2 {
+    text-indent: calc(38vw - 20px);
+  }
+
+  .about-me p::before {
+    content: '';
+    float: left;
+    height: calc(16vw - 70px);
+    width: calc(38vw - 20px);
+  }
+
+  .social-links {
+    display: none;
+  }
 }
