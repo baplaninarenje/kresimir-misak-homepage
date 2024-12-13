@@ -7,6 +7,7 @@
   --text-and-background-color-white: white;
   --text-color-grey: #333;
   --border-and-box-shadow-color-black: rgba(0, 0, 0, 0.1);
+  --profile-card-h1-background-color-black: rgba(0, 0, 0, 0.3);
   --profile-card-and-project-box-shadow: 5px 5px 5px
       var(--border-and-box-shadow-color-black),
     -3px 0px 3px var(--border-and-box-shadow-color-black);
@@ -16,6 +17,11 @@
     155deg,
     var(--background-color-blue) 50%,
     var(--text-and-background-color-white) 50%
+  );
+  --header-desktop-background: linear-gradient(
+    175deg,
+    var(--background-color-blue) 65%,
+    var(--text-and-background-color-white) 35%
   );
 }
 
@@ -351,4 +357,69 @@ address {
     width: 45vw;
   }
   /* footer */
+}
+
+/* desktop */
+@media (min-width: 1000px) {
+  /* header */
+
+  h2 {
+    font-size: clamp(2.4rem, 3.8vw, 3.2rem);
+  }
+
+  .project-info-top h3 {
+    font-size: clamp(1.4rem, 2.3vw, 2.4rem);
+  }
+
+  p {
+    font-size: clamp(1rem, 1.6vw, 1.6rem);
+  }
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding: 5vw;
+    background: var(--header-desktop-background);
+  }
+
+  .profile-card {
+    z-index: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card picture {
+    max-width: fit-content;
+  }
+
+  .profile-card h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-top: -84px;
+    background-color: var(--profile-card-h1-background-color-black);
+    -webkit-text-stroke: 1px var(--profile-card-h1-background-color-black);
+  }
+
+  .about-me {
+    padding: 3vw;
+    margin: 0;
+    gap: 1.5vw;
+  }
+
+  .about-me h2 {
+    text-indent: 0;
+    align-self: flex-start;
+  }
+
+  .about-me p::before {
+    content: none;
+  }
+
+  .about-me .social-links {
+    display: flex;
+    align-self: flex-end;
+  }
+  /* header */
 }
