@@ -185,16 +185,16 @@ address {
   gap: 14px;
 }
 
+.address-bottom svg {
+  display: none;
+}
+
 .phone,
 .email {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 10px 0;
-}
-
-.address-bottom svg {
-  display: none;
 }
 
 .address-bottom svg path {
@@ -249,7 +249,7 @@ address {
     width: calc(38vw - 20px);
   }
 
-  .social-links {
+  .about-me .social-links {
     display: none;
   }
   /* header */
@@ -267,7 +267,6 @@ address {
   .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 5vw 3vw;
   }
 
@@ -293,4 +292,63 @@ address {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
   }
   /* main */
+  /* footer */
+  footer {
+    flex-direction: row;
+    padding: 4vw 4vw 8vw;
+    justify-content: space-between;
+  }
+
+  .contact-me {
+    width: 45vw;
+    padding: 0;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .contact-me > h2 {
+    align-self: auto;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+  }
+
+  .contact-me > p,
+  .contact-me > address {
+    font-size: clamp(1rem, 2.1vw, 1.3rem);
+    font-weight: 300;
+  }
+
+  .phone,
+  .email {
+    gap: clamp(5px, 1.5vw, 15px);
+    padding: clamp(3px, 1vw, 10px) 0;
+  }
+
+  .phone svg,
+  .email svg {
+    transform: translateY(5%);
+    flex-shrink: 0;
+  }
+
+  .email a {
+    font-size: clamp(0.8rem, 2.1vw, 1.3rem);
+  }
+
+  .address-bottom svg {
+    display: block;
+  }
+
+  .contact-me .social-links {
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 0;
+  }
+
+  .linkedin {
+    transform: translateX(-10%);
+  }
+
+  footer img {
+    width: 45vw;
+  }
+  /* footer */
 }
