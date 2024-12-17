@@ -422,4 +422,14 @@ address {
     align-self: flex-end;
   }
   /* header */
+
+  /* main */
+  main {
+    padding-bottom: calc(90px + 5vw);
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* main */
 }
