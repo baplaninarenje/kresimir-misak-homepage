@@ -432,4 +432,19 @@ address {
     grid-template-columns: repeat(3, 1fr);
   }
   /* main */
+
+  /* footer */
+  footer {
+    padding-bottom: 4vw;
+  }
+
+  .contact-me {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  footer img {
+    width: auto;
+  }
+  /* footer */
 }
