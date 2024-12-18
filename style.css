@@ -81,6 +81,7 @@ svg path {
 .project img,
 footer img {
   margin: 0 auto;
+  height: auto;
 }
 
 .profile-card img {
