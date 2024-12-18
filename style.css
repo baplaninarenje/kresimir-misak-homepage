@@ -364,15 +364,18 @@ address {
   /* header */
 
   h2 {
-    font-size: clamp(2.4rem, 3.8vw, 3.2rem);
+    font-size: clamp(2.2rem, 3.4vw, 2.8rem);
   }
 
   .project-info-top h3 {
-    font-size: clamp(1.4rem, 2.3vw, 2.4rem);
+    font-size: clamp(1.4rem, 2vw, 2.1rem);
   }
 
-  p {
-    font-size: clamp(1rem, 1.6vw, 1.6rem);
+  p,
+  .contact-me > p,
+  .contact-me > address,
+  .email a {
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
   }
 
   header {
