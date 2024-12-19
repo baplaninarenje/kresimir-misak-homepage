@@ -107,6 +107,7 @@ footer img {
   padding-left: 5px;
   transform: translateY(-100%);
   -webkit-text-stroke: 1px var(--profile-card-h1-background-color-black);
+  paint-order: stroke fill;
 }
 
 .about-me {
