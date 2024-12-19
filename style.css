@@ -58,10 +58,26 @@ h2 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-color: transparent;
   color: inherit;
   cursor: pointer;
   flex-shrink: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.social-links a:hover,
+a.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+a.project-links:hover {
+  transform: translate(1px);
+}
+
+.address-bottom a:hover {
+  text-decoration-color: inherit;
 }
 
 svg path {
