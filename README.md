@@ -16,7 +16,7 @@ This [project](https://www.theodinproject.com/lessons/node-path-advanced-html-an
 ## Live Demo
 
 You can view the live project by visiting the following URL:  
-[Krešimir Mišak Fan Page] TBA (https://example.com)
+[Krešimir Mišak Fan Page](https://baplaninarenje.github.io/kresimir-misak-homepage/)
 
 ## Features
 
