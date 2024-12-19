@@ -43,4 +43,4 @@ This project is licensed under the Beerware License. For more details about the 
 
 ### Author
 
-Created by : [Stefan Ljiljak](www.linkedin.com/in/stefan-ljiljak/). Feel free to reach out for any suggestions or questions!
+Created by : [Stefan Ljiljak](https://www.linkedin.com/in/stefan-ljiljak/). Feel free to reach out for any suggestions or questions!
